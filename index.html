@@ -111,22 +111,22 @@
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
     <script>
-      const gitalk = new Gitalk({
+      var gitalk = new Gitalk({
         clientID: 'f8a8fe9bfa1c59c7e88d',
         clientSecret: '29b215ff9131d7c53a300f430db7be3ee16a5479',
         repo: '7a0i5m.github.io',
         owner: '7a0i5m',
         admin: ['7a0i5m'],
-        title: location.hash.match(/#(.*?)([?]|$)/)[1],
-        id: location.hash.match(/#(.*?)([?]|$)/)[1],
+        //title: location.hash.match(/#(.*?)([?]|$)/)[1],
+        //id: location.hash.match(/#(.*?)([?]|$)/)[1],
         // facebook-like distraction free mode
-        distractionFreeMode: false
+        //distractionFreeMode: false
       })
-      window.onhashchange = function(event){
-        if(event.newURL.split('?')[0]!== event.oldURL.split('?')[0]){
-          location.reload()
-        }
-      }
+      // window.onhashchange = function(event){
+      //   if(event.newURL.split('?')[0]!== event.oldURL.split('?')[0]){
+      //     location.reload()
+      //   }
+      // }
       //gitalk.render('gitalk-container')
     </script>
     
