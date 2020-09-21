@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8" />
+    <!-- Theme: Simple -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"
+    />
+    <!-- Custom theme styles -->
+    <style>
+      /* 主题自定义 */
+      :root {
+        --base-font-size: 14px;
+        --theme-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="https://twitter.com/7a0i5m">My Twitter</a>
+      <a href="#/zh-cn/">中文</a>
+    </nav>
+    <div id="app">加载中...</div>
+    <script>
+      window.$docsify = {
+        //...
+        name: '<img src="/IMG_3781.jpeg">h4ck3r_7a0i5m',
+        repo: 'https://github.com/7a0i5m',
+        mergeNavbar: true,
+        loadSidebar: true,
+        subMaxLevel: 3,
+        alias: {
+          "/.*/_sidebar.md": "/_sidebar.md",
+        },
+        search: {
+        placeholder: '请输入搜索关键词...'},
+        markdown: {
+          renderer: {
+            code: function (code, lang) {
+              if (lang === "flow") {
+                (async () => {
+                  await sleep(500);
+                  var diagram = flowchart.parse(code);
+                  diagram.drawSVG("flow");
+                })();
+                return '<div id="flow"></div>';
+              } else if (lang === "sequence") {
+                (async () => {
+                  await sleep(500);
+                  var diagram = Diagram.parse(code);
+                  diagram.drawSVG("sequence", { theme: "simple" });
+                })();
+                return '<div id="sequence"></div>';
+              } else if (lang === "mermaid") {
+                return (
+                  '<div class="mermaid">' +
+                  mermaid.render(lang, code) +
+                  "</div>"
+                );
+              } else if (lang === "c++") {
+                lang = "cpp";
+              }
+              return this.origin.code.apply(this, arguments);
+            },
+          },
+        },
+        // 折叠目录
+        plugins: [
+          function (hook, vm) {
+            hook.doneEach(function () {
+              document
+                .querySelectorAll(".sidebar-nav > ul > li")
+                .forEach(function (node, index, nodelist) {
+                  var span = document.createElement("span");
+                  span.innerHTML = node.firstChild.data;
+                  span.style.cursor = "pointer";
+                  span.onclick = function (event) {
+                    var ul = event.target.nextElementSibling;
+                    if (ul.style.display === "none") {
+                      ul.style.display = "block";
+                    } else {
+                      ul.style.display = "none";
+                    }
+                  };
+                  node.firstChild.replaceWith(span);
+                  node.lastChild.style.display = "none";
+                });
+              var active = document.querySelector(".sidebar-nav li.active");
+              if (active) {
+                active.parentElement.style.display = "block";
+              }
+            });
+          },
+        ],
+      };
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  </body>
+</html>
