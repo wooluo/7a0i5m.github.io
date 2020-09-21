@@ -76,7 +76,7 @@
     </nav>
     <div id="app">加载中...</div>
     <!-- gitalk scripts -->
-
+    <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
     <script>
       window.$docsify = {
         //...
@@ -89,7 +89,7 @@
           "/.*/_sidebar.md": "/_sidebar.md",
         },
         search: {
-        placeholder: '请输入搜索关键词...'},
+          placeholder: '请输入搜索关键词...'},
         markdown: {
           renderer: {
             code: function (code, lang) {
