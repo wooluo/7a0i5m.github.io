@@ -49,7 +49,7 @@ ___【Walkthroughs】___
 	- [Bravery](/docs/vulnhub_walkthrough/Bravery.md)
 	- [Breach_1.0](/docs/vulnhub_walkthrough/Breach_1.0.md)
 	- [Breach_3.0.1](/docs/vulnhub_walkthrough/Breach_3.0.1.md)
-	- [DC-6](/docs/vulnhub_walkthrough/DC-6.md)
+	- [DC-6](/docs/vulnhub_walkthrough/DC_6.md)
 	- [DC-9](/docs/vulnhub_walkthrough/DC-9.md)
 	- [DeRPnStiNK](/docs/vulnhub_walkthrough/DeRPnStiNK.md)
 	- [Development](/docs/vulnhub_walkthrough/Development.md)
