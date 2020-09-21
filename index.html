@@ -117,17 +117,9 @@
         repo: '7a0i5m.github.io',
         owner: '7a0i5m',
         admin: ['7a0i5m'],
-        title: location.hash.match(/#(.*?)([?]|$)/)[1],
-        id: location.hash.match(/#(.*?)([?]|$)/)[1],
-        // facebook-like distraction free mode
-        //distractionFreeMode: false
+        distractionFreeMode: false
       })
-       window.onhashchange = function(event){
-         if(event.newURL.split('?')[0]!== event.oldURL.split('?')[0]){
-           location.reload()
-         }
-       }
-      //gitalk.render('gitalk-container')
+       
     </script>
     
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
