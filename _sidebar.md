@@ -1,8 +1,8 @@
-<!-- ----
-___【首页】___ -->
+----
+___【首页】___
 * 关于我 +
 	- [About Me](/README.md)
-<!-- ----
+----
 ___【每日阅读】___
 * 每日阅读列表 +
 	- [每日阅读列表](/docs/daily_reading/read_list.md)
@@ -91,4 +91,4 @@ ___【Walkthroughs】___
 ___【杂谈】___
 * try harder +
 	- [Read_Me](/README.md)
----- -->
+----
