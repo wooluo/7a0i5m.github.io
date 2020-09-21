@@ -110,6 +110,8 @@
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+    <script src="{{ site.baseurl }}/md5.min.js"></script>
+
     <script>
       var gitalk = new Gitalk({
         clientID: 'f8a8fe9bfa1c59c7e88d',
@@ -117,6 +119,7 @@
         repo: '7a0i5m.github.io',
         owner: '7a0i5m',
         admin: ['7a0i5m'],
+        id: md5(location.pathname),
         distractionFreeMode: false
       })
        
