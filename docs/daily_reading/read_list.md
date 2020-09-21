@@ -4,6 +4,42 @@ description: 每日保持阅读，保持进步。
 
 # 每日阅读列表
 
+## 2020年9月22日
+
+----
+## 2020年9月21日
+
+### 关于渗透测试和bug hunting的初学者建议
+
+Infosec/Bugbounty AMA with Aditya Shende
+
+http://sillydaddy.me/infosec-bugbounty-ama/2020/08/27/Infosec-Bugbounty-AMA-Aditya-Shende.html
+
+### TJnull大佬 建立家庭实验室指南
+
+TJnull's guide to building a Home Lab
+
+https://www.netsecfocus.com/home/lab/2020/09/21/Tjnulls_guide_to_building_a_Home_Lab.html
+
+### 使用 XPATH 注入获取数据
+
+Hacking XML Data
+
+https://vkili.github.io/blog/hacking/xpath-injection/
+
+### 使用Google BigQuery在IIS上查找隐藏的文件和文件夹
+
+Finding Hidden Files and Folders on IIS using BigQuery
+
+https://blog.assetnote.io/2020/09/18/finding-hidden-files-folders-iis-bigquery/
+
+### 防御深层伪装
+
+Defending Against Deepfakes: From Tells to Crypto
+
+https://www.darkreading.com/theedge/dont-fall-for-it!-defending-against-deepfakes/b/d-id/1338948
+
+----
 ## 2020年9月20日
 
 ### 对网络钓鱼难度进行分类：网络钓鱼规模
@@ -41,7 +77,7 @@ https://hackaday.com/2020/09/20/esp8266-turned-secretive-wifi-probe-request-snif
 https://www.kitploit.com/2020/09/winshark-wireshark-plugin-to-instrument.html?utm\_source=feedburner&utm\_medium=feed&utm\_campaign=Feed%3A+PentestTools+%28PenTest+Tools%29
 
 
-
+----
 ## 2020年9月19日
 
 ### 来自Lucifer的新威胁
@@ -75,6 +111,7 @@ https://www.kitploit.com/2020/09/bxss-blind-xss-injector-tool.html?utm\_source=f
 
 https://www.kali.org/news/win-kex-version-2-0/
 
+----
 ## 2020年9月18日
 
 ### CVE-2020-1472在HTB上的实例
@@ -111,6 +148,7 @@ Maze Gang Distributed Ransomware Payload Inside VM
 
 https://securityboulevard.com/2020/09/maze-gang-distributed-ransomware-payload-inside-vm/?utm\_source=feedburner&utm\_medium=feed&utm\_campaign=Feed%3A+SecurityBloggersNetwork+%28Security+Bloggers+Network%29
 
+----
 ## 2020年9月17日
 
 ### DockerENT-分析运行Docker容器和Docker网络漏洞及配置问题的唯一开源工具
@@ -141,6 +179,7 @@ CVE-2020-1380: Analysis of Recently Fixed IE Zero-Day
 
 https://www.trendmicro.com/en\_us/research/20/h/cve-2020-1380-analysis-of-recently-fixed-ie-zero-day.html
 
+----
 ## 2020年9月16日
 
 ### 通过颠覆 Netlogon 加密（CVE-2020-1472）立即成为域管理员
