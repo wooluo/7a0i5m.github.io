@@ -119,10 +119,16 @@
         repo: '7a0i5m.github.io',
         owner: '7a0i5m',
         admin: ['7a0i5m'],
-        id: md5(window.location.pathname),
+        title: location.hash.match(/#(.*?)([?]|$)/)[1],
+        id: location.hash.match(/#(.*?)([?]|$)/)[1],
+        //id: md5(window.location.pathname),
         distractionFreeMode: false
       })
-       
+      window.onhashchange = function(event){
+        if(event.newURL.split('?')[0]!== event.oldURL.split('?')[0]){
+          location.reload()
+        }
+      }
     </script>
     
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
