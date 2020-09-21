@@ -34,20 +34,7 @@
     </nav>
     <div id="app">加载中...</div>
     <!-- gitalk scripts -->
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
-<script>
-  const gitalk = new Gitalk({
-    clientID: 'f8a8fe9bfa1c59c7e88d',
-    clientSecret: '29b215ff9131d7c53a300f430db7be3ee16a5479',
-    repo: '7a0i5m.github.io',
-    owner: '7a0i5m',
-    admin: ['7a0i5m'],
-    // facebook-like distraction free mode
-    distractionFreeMode: false
-  })
-  gitalk.render('gitalk-container')
-</script>
+
     <script>
       window.$docsify = {
         //...
@@ -121,7 +108,28 @@
         ],
       };
     </script>
-    <div id="gitalk-container"></div>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+    <script>
+      const gitalk = new Gitalk({
+        clientID: 'f8a8fe9bfa1c59c7e88d',
+        clientSecret: '29b215ff9131d7c53a300f430db7be3ee16a5479',
+        repo: '7a0i5m.github.io',
+        owner: '7a0i5m',
+        admin: ['7a0i5m'],
+        title: location.hash.match(/#(.*?)([?]|$)/)[1],
+        id: location.hash.match(/#(.*?)([?]|$)/)[1],
+        // facebook-like distraction free mode
+        distractionFreeMode: false
+      })
+      window.onhashchange = function(event){
+        if(event.newURL.split('?')[0]!== event.oldURL.split('?')[0]){
+          location.reload()
+        }
+      }
+      //gitalk.render('gitalk-container')
+    </script>
+    
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
     <!-- 语言高亮 -->
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
