@@ -41,6 +41,7 @@ ___【Walkthroughs】___
 	- [bastion_134](/docs/hackthebox_walkthrough/bastion_134.md)
 	- [blunder_191](/docs/hackthebox_walkthrough/blunder_191.md)
 	- [cache_188](/docs/hackthebox_walkthrough/cache_188.md)
+	- [Control_167](/docs/hackthebox_walkthrough/Control_167.md)
 	- [jarvis_143](/docs/hackthebox_walkthrough/jarvis_143.md)
 	- [magic_185](/docs/hackthebox_walkthrough/magic_185.md)
 	- [secnotes_97](/docs/hackthebox_walkthrough/secnotes_97.md)

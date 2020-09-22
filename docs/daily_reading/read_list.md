@@ -6,6 +6,30 @@ description: 每日保持阅读，保持进步。
 
 ## 2020年9月22日
 
+### 使用 Citrix 工作区应用程序返回系统权限 shell
+
+The Return of Raining SYSTEM Shells with Citrix Workspace app
+
+https://www.pentestpartners.com/security-blog/the-return-of-raining-system-shells-with-citrix-workspace-app/
+
+### GRAT2-用于学习目的开发的C2项目
+
+GRAT2 - Command And Control (C2) Project For Learning Purpose
+
+https://www.kitploit.com/2020/09/grat2-command-and-control-c2-project.html
+
+### WebSphere XXE 漏洞分析(CVE-2020-4643)
+
+https://paper.seebug.org/1342/
+
+### 从0开始聊聊自动化静态代码审计工具
+
+https://paper.seebug.org/1339/
+
+### 对多米诺行动所用JScript漏洞(CVE-2020-0968)的详细分析
+
+https://ti.dbappsecurity.com.cn/blog/index.php/2020/09/18/cve-2020-0968/
+
 ----
 ## 2020年9月21日
 
